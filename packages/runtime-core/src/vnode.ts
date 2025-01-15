@@ -1,3 +1,6 @@
+export const Fragment = Symbol('Fragment');
+export const Text = Symbol('Text');
+export const Comment = Symbol('Comment');
 /**
  * VNode
  * */
