@@ -20,6 +20,18 @@ export const isFunction = (val: unknown): val is Function =>
  */
 export const extend = Object.assign
 
+/**
+ * 只读的空对象
+ * */
+export const EMPTY_OBJ: {readonly [key: string]: any} = {}
+
+
+/**
+ * 判断是否为一个string
+ * */
+export const isString = (val: unknown): val is string => typeof val === 'string'
+
+const onRE = /^on[^a-z]/
 
 /**
  * 对比两个数据是否发生了改变
